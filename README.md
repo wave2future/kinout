@@ -1,10 +1,7 @@
-Kinout
-=======
+# Kinout
+### HTML5-based Keynote System.
 
-HTML5-based Keynote System.
-------------------------------------------------------------------
-Description.
-
+## Introduction
 - [Easy to install](http://). Get up and running in a few minutes.
 - [Entirely customizable](http://) with selector options
 - Page history management and CSS3 page transitions, including 3D flip
@@ -14,14 +11,12 @@ Description.
 
 [Watch this video preview](http://www.tapquo.com/) to see it in action.
 
-Credits
--------
+## Credits
 Created by [Javier Jiménez](http://www.soyjavi.com).
 
 Copyright (c) 2011 by Tapquo Inc.
 
-Licensing Options
------------------
+## Licensing Options
 Kinout is licensed under free commercial and open source licenses for 
 application development, and a paid commercial license for OEM uses.
 
