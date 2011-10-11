@@ -36,7 +36,7 @@ KINOUT.View = (function(knt, undefined) {
     };
     
     var _updateSlideIndexes = function() {
-        _index.horizontal = _updateSlides( '#kinout>section', _index.horizontal );
+        _index.horizontal = _updateSlides( '.kinout>section', _index.horizontal );
         _index.vertical = _updateSlides( 'section.present>section', _index.vertical );
     };
     
