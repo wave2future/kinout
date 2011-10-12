@@ -12,12 +12,29 @@ KINOUT.View = (function(knt, undefined) {
         horizontal: 0,
         vertical: 0
     };
-    
+
     /**
-     * Initializes the automatic subscription events by markup of the project.
+     * ?
      *
      * @method init
      *
+     * @params {object} ?
+     */
+    var init = function(config) {
+        //@TODO >> Refactor to KINOUT.View.Markup
+        if (config.template) {
+            knt.Dom.addClass('.kinout', config.template);
+        }
+        knt.Dom.prepend('body', '<div class="glow"></div>');
+    };
+
+    /**
+     * ?
+     *
+     * @method slide
+     *
+     * @params {number} Horizontal index
+     * @params {number} Vertical index
      */
     var slide = function(horizontal, vertical) {
         _saveNewIndexes(horizontal, vertical);
@@ -25,7 +42,14 @@ KINOUT.View = (function(knt, undefined) {
         
         knt.Url.write(_index.horizontal, _index.vertical);    
     };
-    
+
+    /**
+     * ?
+     *
+     * @method index
+     *
+     * @return {object} Index object that contains horizontal & vertical indexes
+     */
     var index = function(){
         return _index;
     }
@@ -39,19 +63,7 @@ KINOUT.View = (function(knt, undefined) {
         _index.horizontal = _updateSlides( '.kinout>section', _index.horizontal );
         _index.vertical = _updateSlides( 'section.present>section', _index.vertical );
     };
-    
-    /**
-     * Updates one dimension of slides by showing the slide with the specified index.
-     * 
-     * @param {String} selector A CSS selector that will fetch
-     * the group of slides we are working with
-     * @param {Number} index The index of the slide that should be
-     * shown
-     * 
-     * @return {Number} The index of the slide that is now shown,
-     * might differ from the passed in index if it was out of 
-     * bounds.
-     */
+
     var _updateSlides = function( selector, index ) {    	
     	// Select all slides and convert the NodeList result to an array
     	var slides = Array.prototype.slice.call( document.querySelectorAll( selector ) );
@@ -77,11 +89,11 @@ KINOUT.View = (function(knt, undefined) {
     		index = 0;
     	}
     	
-    	return index;    	
+    	return index;
     };
-    
-    
+
     return {
+        init: init,
         slide: slide,
         index: index
     };

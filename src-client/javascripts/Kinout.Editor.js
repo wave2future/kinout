@@ -8,9 +8,9 @@
  */
 
 KINOUT.Editor = (function(knt, undefined) {
-    
+
     return {
-        
+
     };
 
 })(KINOUT);
