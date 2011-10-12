@@ -1,0 +1,55 @@
+<!doctype html>  
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<link rel="apple-touch-icon" href="resources/images/icon@2x.png"/>
+	<link rel="apple-touch-startup-image" href="resources/images/splash.png" />
+	
+	<title>Lungo - Mobile framework, and stuff.</title>
+	<link rel="stylesheet" href="../../src-client/stylesheets/reset.css">
+	<link rel="stylesheet" href="../../src-client/stylesheets/layout.css">
+	<link rel="stylesheet" href="../../src-client/stylesheets/widgets.css">
+</head>
+
+<body>
+	<div class="kinout" data-search="as">
+		<section>
+		    <h1>#kinout<mark>JS</mark></h1>
+		    <h4><mark>HTML5-based Keynote System.</mark></h4>
+		</section>
+		
+		<section>
+			<h2><mark>Nerd</mark> behind #kinout<mark>JS</mark></h2>
+		    <h4><mark>...dangerous with TextMate in his hands</span></h4>
+		    <article>
+		        <p class="vertical">
+                    <img src="assets/images/soyjavi.jpg" class="bordered size_256 center">
+                </p>
+                <p>
+                    <h4>Javi Jiménez Villar</h4>
+                    <h3><a href="#"><mark>@soyjavi</mark></a></h3>
+                </p>
+            </article>
+		</section>
+		
+		<section>
+		    <h1>...coming <mark>soon</mark>.</h1>
+		</section>
+	</div>
+	<script src="../../src-client/javascripts/Kinout.js"></script>
+	<script src="../../src-client/javascripts/kinout.Core.js"></script>
+	<script src="../../src-client/javascripts/kinout.Dom.js"></script>
+    <script src="../../src-client/javascripts/kinout.Router.js"></script>
+	<script src="../../src-client/javascripts/Kinout.Events.js"></script>
+	<script src="../../src-client/javascripts/Kinout.Url.js"></script>
+	<script src="../../src-client/javascripts/Kinout.View.js"></script>
+
+    <script>
+        KINOUT.Core.init({
+            template: '_circle',
+            });
+    </script>
+</body>
+</html>
