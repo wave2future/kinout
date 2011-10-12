@@ -1,7 +1,8 @@
 @import "mixins/soyjavi.less";
 
 @kinout_height: 640px;
-
+@kinout_width: 920px;
+@article_height: 504px;
 html, body {
 	padding: 0;
 	margin: 0;
@@ -14,51 +15,58 @@ html, body {
     
 	font-family: Helvetica, Arial, sans-serif;
 	font-weight: normal;
-	font-size: 42px;
+	//font-size: 42px;
+	font-size:32px;
+	line-height: 1.0em;
 }
 
-/*********************************************
- * HEADERS
- *********************************************/
+/*****************************************************************************
+ * Literals
+ *****************************************************************************/
 h1, h2, h3, h4 {
 	margin: 0 0 8px;
+
 	line-height: 0.9em;
 	letter-spacing: -0.02em;
+
 	font-weight: bold;
+	line-height: 0.9em;
 }
 
-h1 { font-size: 138px;
-	 margin-top: 20%;
+h1 {
+    margin-top: 25%;
+    font-size: 3.6em;
 }
 
 h2 {
-	margin-top: 16px;
-	font-size: 64px;
+	margin-top: 12px;
+	font-size: 1.8em;
 }
 
 h3 {
-    font-size: 48px;
+    font-size: 1.25em;
+    line-height: 0.9em;
 }
 
 h4 {
-    font-size: 32px;
+    font-size: 1.0em;    
+    line-height: 0.75em;
 }
-/* @end */
 
-/*********************************************
- * KINOUT
- *********************************************/
+/*****************************************************************************
+ * .KINOUT
+ *****************************************************************************/
 .kinout {
     position: absolute;
-	width: 920px;
-	height: @kinout_height;	
+	width: @kinout_width;
+	height: @kinout_height;
+	
 	left: 50%;
 	top: 50%;
 	margin-left: -460px;
 	margin-top: -320px;
-	
 	text-align: center;
-    }
+}
 
 .circle{
 	-webkit-perspective: 600px;
@@ -129,4 +137,21 @@ section{
 	.transform(	translate3d(0, 50%, 0) 
 				rotateX(-70deg) 
 				translate3d(0, 50%, 0));
+}
+
+article{
+	/*
+	position: absolute;
+	top: 128px;
+	
+	
+	background: #f00;
+	
+	overflow: hidden;
+	*/
+	margin-top: 24px;
+	
+	height: @article_height;
+	width: 100%;
+	font-weight: normal;
 }
