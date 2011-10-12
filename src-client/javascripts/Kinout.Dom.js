@@ -18,7 +18,7 @@ KINOUT.Dom = (function(knt, undefined) {
      * params {string} Class name to append to container
      */
     var addClass = function(selector, css_class) {
-        var elements = _getElements(selector);
+        var elements = _findElements(selector);
         for (index in elements) {
             var element = elements[index];
             var element_hasClass = _hasClass(element, css_class);
@@ -38,7 +38,7 @@ KINOUT.Dom = (function(knt, undefined) {
      * params {string} Class name to append to container
      */
     function removeClass(selector, css_class) {
-        var elements = _getElements(selector);
+        var elements = _findElements(selector);
         for (index in elements) {
             var element = elements[index];
             var element_hasClass = _hasClass(element, css_class);
@@ -88,7 +88,7 @@ KINOUT.Dom = (function(knt, undefined) {
         return document.querySelector(selector);
     };
 
-    var _getElements = function(selector) {
+    var _findElements = function(selector) {
         var elements = [];
 
         try {
