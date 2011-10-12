@@ -8,6 +8,10 @@
  */
 
 KINOUT.Core = (function(knt, undefined) {
+    var _current = {
+        horizontal: 0,
+        vertical: 0
+    };
 
     /**
      * ?

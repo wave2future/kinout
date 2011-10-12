@@ -12,6 +12,11 @@ KINOUT.View = (function(knt, undefined) {
         horizontal: 0,
         vertical: 0
     };
+    
+    var MARKUP = {
+        GLOW: '<div class="glow"></div>',
+        COPYRIGHT: '<div class="copyright">Made with <a href="http://tapquo.com/kinout/">Kinout</a> by Tapquo Inc.</div>'
+    };
 
     /**
      * ?
@@ -25,7 +30,12 @@ KINOUT.View = (function(knt, undefined) {
         if (config.template) {
             knt.Dom.addClass('.kinout', config.template);
         }
-        knt.Dom.prepend('body', '<div class="glow"></div>');
+        knt.Dom.prepend('body', MARKUP.GLOW);
+        knt.Dom.append('body', MARKUP.COPYRIGHT);
+        
+        //Analize navigator
+		var message = navigator.userAgent.match( /(iPhone|iPad|iPod|Android)/i ) ? 'Tap to navigate' : 'Navigate via keyboard';
+		knt.Dom.append('section:first-child', '<h4 class="transparent">('+message+')</h4>');
     };
 
     /**

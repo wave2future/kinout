@@ -59,7 +59,10 @@ KINOUT.Dom = (function(knt, undefined) {
      * params {string} Markup to append
      */
     var append = function(selector, markup) {
-
+        var element = get(selector);
+        if (element) {
+            element.innerHTML += markup;
+        }
     };
 
     /**
@@ -100,7 +103,6 @@ KINOUT.Dom = (function(knt, undefined) {
     };
 
     function _hasClass(element, css_class) {
-        console.error(element.className);
         return element.className.match(new RegExp('(\\s|^)' + css_class + '(\\s|$)'));
     }
 
