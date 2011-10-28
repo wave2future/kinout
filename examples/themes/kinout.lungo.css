@@ -1,0 +1,26 @@
+@font-face {
+	font-family: 'Lubalin';
+	src: url('fonts/lubalin_normal.otf') format('opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+	
+@font-face {
+	font-family: 'Lubalin';
+	src: url('fonts/lubalin_bold.otf') format('opentype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+html, body {
+	background: url(images/bg-lungo.gif) repeat;
+	color: #fff;
+	font-family: 'Lubalin';
+}
+
+.kinout mark{ 
+    background: none;
+	color: #000; 
+	opacity: 0.5;
+	text-shadow: 0px 1px 1px rgba(255,255,255,0.5);
+}
