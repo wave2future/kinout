@@ -1,3 +1,6 @@
+build/
+
+examples/tapquo
 
 vendor/.DS_Store
 
