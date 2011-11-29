@@ -8,11 +8,11 @@ html, body {
 	margin: 0;
 	width: 100%;
 	height: 100%;
-	
+
 	overflow: hidden;
 	color: @grayLighter;
 	background: @white;
-    
+
 	font-family: Helvetica, Arial, sans-serif;
 	font-weight: normal;
 	//font-size: 42px;
@@ -49,7 +49,7 @@ h3 {
 }
 
 h4 {
-    font-size: 1.0em;    
+    font-size: 1.0em;
     line-height: 0.75em;
 }
 
@@ -60,7 +60,7 @@ h4 {
     position: absolute;
 	width: @kinout_width;
 	height: @kinout_height;
-	
+
 	left: 50%;
 	top: 50%;
 	margin-left: -460px;
@@ -89,14 +89,14 @@ section{
 
 .kinout section.past {
 	display: block;
-	opacity: 0;	
+	opacity: 0;
 	.transform(	translate3d(-100%, 0, 0));
 }
 
 .circle section.past {
-    .transform(	translate3d(-100%, 0, 0) 
-				rotateY(-90deg) 
-				translate3d(-100%, 0, 0)); 
+    .transform(	translate3d(-100%, 0, 0)
+				rotateY(-90deg)
+				translate3d(-100%, 0, 0));
 }
 
 .kinout section.present {
@@ -110,8 +110,8 @@ section{
 }
 
 .circle section.future{
-    .transform(	translate3d(100%, 0, 0) 
-				rotateY(90deg) 
+    .transform(	translate3d(100%, 0, 0)
+				rotateY(90deg)
 				translate3d(100%, 0, 0));
 }
 
@@ -122,9 +122,9 @@ section{
 }
 
 .circle section>section.past{
-   	.transform(	translate3d(0, -50%, 0) 
-				rotateX(70deg) 
-				translate3d(0, -50%, 0)); 
+   	.transform(	translate3d(0, -50%, 0)
+				rotateX(70deg)
+				translate3d(0, -50%, 0));
 }
 
 .kinout section>section.future {
@@ -134,8 +134,8 @@ section{
 }
 
 .circle section>section.future{
-	.transform(	translate3d(0, 50%, 0) 
-				rotateX(-70deg) 
+	.transform(	translate3d(0, 50%, 0)
+				rotateX(-70deg)
 				translate3d(0, 50%, 0));
 }
 
@@ -143,14 +143,14 @@ article{
 	/*
 	position: absolute;
 	top: 128px;
-	
-	
+
+
 	background: #f00;
-	
+
 	overflow: hidden;
 	*/
 	margin-top: 24px;
-	
+
 	height: @article_height;
 	width: 100%;
 	font-weight: normal;
