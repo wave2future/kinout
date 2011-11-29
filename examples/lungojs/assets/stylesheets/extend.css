@@ -1,0 +1,26 @@
+h1.with-image {
+    margin-top: 10%;
+    font-size: 3.6em;
+}
+
+.box {
+    width: 210px;
+    height: 210px;
+    margin: 10px;
+    background: #fff;
+    
+    color: #196e53;
+    text-shadow: none;
+    text-align: center;
+}
+    .box strong{
+        font-size: 112px;
+    	line-height: 220px;  
+    	display: block;      
+	}
+	
+	.box small {
+    	font-size: 32px;
+    	position: relative;
+    	top: -64px;
+	}
